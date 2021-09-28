@@ -13,13 +13,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         Section.allCases.count
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return Section.interests.rawValue
-        } else {
-            return Section.all.rawValue
-        }
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        if section == 0 {
+//            return Section.interests.rawValue
+//        } else {
+//            return Section.all.rawValue
+//        }
+//    }
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
@@ -29,10 +29,19 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             return all.count
         }
     }
-    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UIScreen.main.bounds.height / 10
+    }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        return UIView()
+        let headerNib = UINib(nibName: "CategoriesTVHeaderCell", bundle: .main)
+        tableView.register(headerNib, forCellReuseIdentifier: "CategoryHeader")
+        let headerCell = tableView.dequeueReusableCell(withIdentifier: "CategoryHeader") as? CategoriesTVHeaderCell
+                if section == 0 {
+                    headerCell?.configHeader(with: Section.interests.rawValue, buttonState: false)
+                } else {
+                    headerCell?.configHeader(with: Section.all.rawValue, buttonState: true)
+                }
+        return headerCell?.contentView
     }
     
     func tableView(_ tableView: UITableView,

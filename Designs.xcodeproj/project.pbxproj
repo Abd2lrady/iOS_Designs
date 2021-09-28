@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B44886F127030A15007D739F /* CategoriesTVHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44886EF27030A15007D739F /* CategoriesTVHeaderCell.swift */; };
+		B44886F227030A15007D739F /* CategoriesTVHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B44886F027030A15007D739F /* CategoriesTVHeaderCell.xib */; };
 		B4CBB720270190C700A2E9E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBB71F270190C700A2E9E3 /* AppDelegate.swift */; };
 		B4CBB722270190C700A2E9E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBB721270190C700A2E9E3 /* SceneDelegate.swift */; };
 		B4CBB724270190C700A2E9E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBB723270190C700A2E9E3 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B44886EF27030A15007D739F /* CategoriesTVHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTVHeaderCell.swift; sourceTree = "<group>"; };
+		B44886F027030A15007D739F /* CategoriesTVHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesTVHeaderCell.xib; sourceTree = "<group>"; };
 		B4CBB71C270190C700A2E9E3 /* Designs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Designs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CBB71F270190C700A2E9E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4CBB721270190C700A2E9E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 			children = (
 				B4CBB7462701AB9300A2E9E3 /* CategoryCell.swift */,
 				B4CBB7512701C03F00A2E9E3 /* CategoryCell.xib */,
+				B44886EF27030A15007D739F /* CategoriesTVHeaderCell.swift */,
+				B44886F027030A15007D739F /* CategoriesTVHeaderCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44886F227030A15007D739F /* CategoriesTVHeaderCell.xib in Resources */,
 				B4CBB7522701C03F00A2E9E3 /* CategoryCell.xib in Resources */,
 				B4CBB72C270190C800A2E9E3 /* LaunchScreen.storyboard in Resources */,
 				B4CBB736270193BE00A2E9E3 /* ViewController.xib in Resources */,
@@ -265,6 +272,7 @@
 				B4CBB720270190C700A2E9E3 /* AppDelegate.swift in Sources */,
 				B4CBB74127019A8400A2E9E3 /* Assets.swift in Sources */,
 				B4CBB7442701A89900A2E9E3 /* UIBarButtonItems+.swift in Sources */,
+				B44886F127030A15007D739F /* CategoriesTVHeaderCell.swift in Sources */,
 				B4CBB74E2701B7DD00A2E9E3 /* ViewController+UITableViewDelegates.swift in Sources */,
 				B4CBB722270190C700A2E9E3 /* SceneDelegate.swift in Sources */,
 				B4CBB7482701AB9300A2E9E3 /* CategoryCell.swift in Sources */,

@@ -49,6 +49,7 @@ class ViewController: UIViewController {
     
     func setupCategoriesTV() {
         categoriesTV.dataSource = self
+        categoriesTV.delegate = self
         categoriesTV.estimatedRowHeight = UIScreen.main.bounds.height / 10
         categoriesTV.rowHeight = UIScreen.main.bounds.height / 10
     }
