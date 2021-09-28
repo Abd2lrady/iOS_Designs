@@ -8,12 +8,12 @@
 import UIKit
 
 extension UIView {
-    var setAllRoundedCorners: Int {
+    var setAllRoundedCorners: CGFloat {
         get {
             return 0
         }
         set (radius) {
-            self.layer.cornerRadius = CGFloat(radius)
+            self.layer.cornerRadius = radius
         }
     }
 }

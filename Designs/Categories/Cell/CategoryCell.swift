@@ -9,7 +9,6 @@ import UIKit
 
 class CategoryCell: UITableViewCell {
 
-    @IBOutlet private weak var backView: UIView!
     @IBOutlet private weak var backColor: UIView!
     @IBOutlet private weak var img: UIImageView!
     @IBOutlet private weak var title: UILabel!
@@ -20,7 +19,7 @@ class CategoryCell: UITableViewCell {
     
     override func layoutIfNeeded() {
         super.layoutIfNeeded()
-        backColor.setAllRoundedCorners = 15
+        backColor.setAllRoundedCorners = UIScreen.main.bounds.height / 50
     }
     
     func setImg(with img: UIImage?) {

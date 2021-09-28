@@ -32,7 +32,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        
         return UIView()
     }
     
@@ -51,13 +50,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
             cell?.setTitle(with: all[indexPath.row].title)
             cell?.setImg(with: all[indexPath.row].img)
         }
-        let accessoryIcon = UIImage(asset: Asset.arrowCopy2)
-        let accessory = UIImageView(image: accessoryIcon)
-        accessory.contentMode = .scaleAspectFit
-        accessory.frame = CGRect(x: 0, y: 0, width: 15, height: 15)
-        cell?.accessoryView = accessory
+//        let accessoryIcon = UIImage(asset: Asset.arrowCopy2)
+//        let accessory = UIImageView(image: accessoryIcon)
+//        accessory.contentMode = .scaleAspectFit
+//        accessory.frame = CGRect(x: 0, y: 0, width: 15, height: 15)
+//        cell?.accessoryView = accessory
         return cell ?? UITableViewCell()
-        
     }
     
 }
